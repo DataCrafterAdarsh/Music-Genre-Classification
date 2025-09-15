@@ -2,46 +2,42 @@ Music Genre Classification
 An AI project to automatically classify the genre of a music track using machine learning.
 
 1. Project Overview
-This project implements a complete pipeline for classifying music into one of ten genres (blues, classical, country, disco, hiphop, jazz, metal, pop, reggae, and rock). Developed as part of an internship, the system analyzes audio features to predict a song's genre. It uses a Convolutional Neural Network (CNN) for classification, which is a powerful deep learning model well-suited for this task.
+This project presents a complete implementation for classifying music into one of ten genres (blues, classical, country, disco, hiphop, jazz, metal, pop, reggae, and rock). It was built as a part of the internship project phase at Elevate Labs. The system utilizes machine learning to analyze audio features and predict the correct genre. The primary model used is a Convolutional Neural Network (CNN), which demonstrated a high level of accuracy on the test dataset.
 
 2. Technologies Used
 Python: The core programming language for the entire project.
 
-Librosa: A crucial library for audio analysis and feature extraction.
+Librosa: A crucial library for audio analysis and feature extraction from the raw audio files.
 
 Pandas: Used for data manipulation and analysis of the pre-extracted features.
 
 Scikit-Learn: Utilized for data preprocessing, including scaling and label encoding.
 
-TensorFlow/Keras: The deep learning framework used to build and train the CNN model.
+TensorFlow/Keras: The deep learning framework used to build, train, and evaluate the CNN model.
 
 Joblib: Used to save the trained model and preprocessing pipelines for future use.
 
 3. Dataset
-The project uses the GTZAN Music Genre Dataset, a standard collection of audio files. The dataset contains 1,000 music tracks, each 30 seconds in length, distributed evenly across 10 genres. The provided features_3_sec.csv file, which contains pre-extracted features, is used for efficient model training.
+This project uses the GTZAN Music Genre Dataset, a standard collection of audio files specifically for this task. The dataset contains 1,000 music tracks, each 30 seconds in length, distributed equally across 10 genres. The project uses the pre-extracted features provided in the features_3_sec.csv file for efficient model training.
 
 4. How to Get Started
-To run this project, follow these steps on your local machine.
+To run this project on your local machine, follow these steps:
 
 Prerequisites
-Install the necessary Python libraries using pip:
+You'll need to have Python and the following libraries installed. You can install them using pip:
 
 Bash
 
 pip install pandas scikit-learn numpy librosa tensorflow
 Running the Code
-Download the GTZAN dataset. Ensure the features_3_sec.csv file is in the same directory as your project code.
+Download the Dataset: Download the GTZAN dataset from a source like Kaggle. Ensure the features_3_sec.csv file is placed in the same directory as the project code.
 
-Execute the main Python script from your terminal.
+Execute the Script: Open your terminal and navigate to the project directory. Run the main Python script:
 
-The script will handle all steps from data loading to model training and will provide a final genre prediction for a test audio file.
+Bash
 
-5. Conclusion
-This project successfully demonstrates a complete pipeline for music genre classification. The trained model, along with the real-time detection script, meets all the project's deliverables. The system showcases skills in both traditional machine learning and deep learning applications.
+python your_project_file.py
+The script will handle the data loading, model training, and will provide a final prediction for a test audio file.
 
-
-
-
-
-
-
+5. Results and Conclusion
+The CNN model achieved a high test accuracy, demonstrating its effectiveness in classifying music genres. The project successfully delivers a complete and functional pipeline, from data preprocessing to real-time prediction, showcasing skills in both traditional machine learning and deep learning. This project meets all the deliverables as required by the internship guidelines.
