@@ -1,43 +1,80 @@
 Music Genre Classification
+
 An AI project to automatically classify the genre of a music track using machine learning.
 
-1. Project Overview
-This project presents a complete implementation for classifying music into one of ten genres (blues, classical, country, disco, hiphop, jazz, metal, pop, reggae, and rock). It was built as a part of the internship project phase at Elevate Labs. The system utilizes machine learning to analyze audio features and predict the correct genre. The primary model used is a Convolutional Neural Network (CNN), which demonstrated a high level of accuracy on the test dataset.
+Project Overview
 
-2. Technologies Used
-Python: The core programming language for the entire project.
+This project implements a complete pipeline for classifying music into one of ten genres:
 
-Librosa: A crucial library for audio analysis and feature extraction from the raw audio files.
+blues, classical, country, disco, hiphop, jazz, metal, pop, reggae, rock
 
-Pandas: Used for data manipulation and analysis of the pre-extracted features.
+It was developed as part of the internship project phase at Elevate Labs.
+The system uses machine learning and deep learning to analyze audio features and predict the correct genre.
+A Convolutional Neural Network (CNN) was trained and achieved high accuracy on the test dataset.
 
-Scikit-Learn: Utilized for data preprocessing, including scaling and label encoding.
+Technologies Used
 
-TensorFlow/Keras: The deep learning framework used to build, train, and evaluate the CNN model.
+Python – Core programming language
 
-Joblib: Used to save the trained model and preprocessing pipelines for future use.
+Librosa – Audio analysis and feature extraction
 
-3. Dataset
-This project uses the GTZAN Music Genre Dataset, a standard collection of audio files specifically for this task. The dataset contains 1,000 music tracks, each 30 seconds in length, distributed equally across 10 genres. The project uses the pre-extracted features provided in the features_3_sec.csv file for efficient model training.
+Pandas – Data manipulation and analysis
 
-4. How to Get Started
-To run this project on your local machine, follow these steps:
+Scikit-Learn – Data preprocessing (scaling, label encoding)
 
+TensorFlow / Keras – Building, training, and evaluating the CNN model
+
+Joblib – Saving trained models and preprocessing pipelines
+
+Dataset
+
+Dataset: GTZAN Music Genre Dataset
+
+Contents: 1,000 music tracks, 30 seconds each
+
+Genres: 10 (blues, classical, country, disco, hiphop, jazz, metal, pop, reggae, rock)
+
+Features: Uses features_3_sec.csv (pre-extracted features) for efficient training.
+
+How to Get Started
 Prerequisites
-You'll need to have Python and the following libraries installed. You can install them using pip:
 
-Bash
+Install Python and the required libraries:
 
 pip install pandas scikit-learn numpy librosa tensorflow
-Running the Code
-Download the Dataset: Download the GTZAN dataset from a source like Kaggle. Ensure the features_3_sec.csv file is placed in the same directory as the project code.
 
-Execute the Script: Open your terminal and navigate to the project directory. Run the main Python script:
+Download the Dataset
 
-Bash
+Get the GTZAN dataset (e.g., from Kaggle) and place
+features_3_sec.csv in the same directory as your project files.
+
+Run the Code
+
+Navigate to your project folder and run:
 
 python your_project_file.py
-The script will handle the data loading, model training, and will provide a final prediction for a test audio file.
 
-5. Results and Conclusion
-The CNN model achieved a high test accuracy, demonstrating its effectiveness in classifying music genres. The project successfully delivers a complete and functional pipeline, from data preprocessing to real-time prediction, showcasing skills in both traditional machine learning and deep learning. This project meets all the deliverables as required by the internship guidelines.
+
+The script will:
+
+Load and preprocess the dataset
+
+Train the CNN model
+
+Provide a prediction for a test audio file
+
+Results & Conclusion
+
+The CNN achieved high accuracy on the test set.
+
+The project delivers a complete pipeline: from data preprocessing to real-time prediction.
+
+Demonstrates skills in:
+
+Audio feature engineering
+
+Traditional machine learning
+
+Deep learning with CNNs
+
+Meets all deliverables required by the internship guidelines.
