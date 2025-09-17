@@ -50,7 +50,7 @@
 
 7)    Run the Code
 
-     Navigate to your project folder and run:
+    Navigate to your project folder and run:
 
      python your_project_file.py
 
@@ -78,3 +78,4 @@
      Deep learning with CNNs
 
      Meets all deliverables required by the internship guidelines.
+
